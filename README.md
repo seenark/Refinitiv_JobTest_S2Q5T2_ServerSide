@@ -39,13 +39,10 @@ you will get data like this
 example:
 
 ```
-  {
-    "name": "PYCH",
-    "data": {
-      "a": "12",
-      "b": "3",
-      "btnState": "0"
-    }
+ {
+    "a": "12",
+    "b": "3",
+    "btnState": "0"
   }
 
 
