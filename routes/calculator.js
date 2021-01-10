@@ -1,7 +1,10 @@
 var express = require("express");
 var router = express.Router();
 const redis = require("redis");
-const redisClient = redis.createClient(); // default port 6379
+const redisClient = redis.createClient({
+  host: process.env.REDIS_HOST || "127.0.0.1",
+  port: process.env.REDIS_PORT || "6379",
+}); // default port 6379
 
 router.post("/save", (req, res, next) => {
   const name = req.body.name;
